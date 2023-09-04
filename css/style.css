@@ -29,6 +29,11 @@ body{
     color: var(--standardcolor);
 }
 
+section{
+    height: 100vh;
+    padding: 10em 10% 2em;
+}
+
 #cabeca{
     display: flex;
     justify-content: space-between;
@@ -59,4 +64,50 @@ body{
 #navbar a:hover,
 #navbar a#active{
     color: var(--standardcolor);
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-content h3{
+    font: 3em;
+    font-weight: bolder;
+}
+
+#home-content h1{
+    font-size: 6em;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.home-img > img{
+    width: 35vw;
+    height: 50vh;
+    border-radius: 20px;
+}
+
+#home-content > p{
+    font-size: 1.5em;
+}
+
+#social-media > a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 1.5em 3em 0px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid var(--standardcolor);
+    color: var(--textcolor);
+}
+
+#home-content > p{
+    padding: 5px 5px 5px 0px;
+    background: transparent;
+    color: var(--textcolor);
 }
