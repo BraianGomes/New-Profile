@@ -238,8 +238,10 @@ div#self-img > img{
 }
 
 .portfolio > h2{
-
+    font-size: 4em;
+    margin-bottom: 2em;
 }
+
 
 #portfolioBox > img{
     width: 250px;
@@ -300,6 +302,7 @@ div#self-img > img{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    margin-left: 280px;
     width: 5em;
     height: 5em;
     background-color: var(--textcolor);
