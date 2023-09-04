@@ -127,15 +127,19 @@ span{
     box-shadow: 0 0 20px var(--standardcolor);
 }
 
-#home-container > div#number > p{
+#number > p{
     font-size: 1.5em;
     padding: 5px 5px 5px 0px;
     background: transparent;
     color: var(--textcolor);
 }
 
-#home-container > div#number p:hover{
+#number > p:hover{
     color: var(--standardcolor);
+}
+
+#number > p > i{
+    font-size: 1.5em;
 }
 
 .button{
@@ -198,6 +202,47 @@ div#self-img > img{
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5em;
+}
+
+#services-container > .box{
+    flex: 1 1 30em;
+    background-color: var(--bgcolor2);
+    padding: 3em 2em 4em;
+    border-radius: 2em;
+    text-align: center;
+    transition: .4s ease;
+}
+
+#services-container > .box:hover{
+    border: 2px solid var(--standardcolor);
+    transform: scale(105%);
+}
+
+.box > i{
+    font-size: 6em;
+    color: var(--standardcolor);
+}
+
+.box > h3{
+    font-size: 2.5em;
+}
+
+.box > p{
+    font-size: 1.5em;
+    margin: 1em 0px 3em;
+}
+
+.portfolio{
+    background-color: var(--bgcolor2);
+}
+
+.portfolio > h2{
+
+}
+
+#portfolioBox > img{
+    width: 200px;
+    height: 200px;
 }
  
 
