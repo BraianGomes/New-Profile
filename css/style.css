@@ -346,7 +346,8 @@ div#self-img > img{
     resize: none;
 }
 
-.contacts > form > .button:hover{
+.contacts > form > .button{
+    margin-top: 20px;
     
 }
 
