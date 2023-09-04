@@ -26,7 +26,7 @@ html{
 
 body{
     background-color: var(--bgcolor);
-    color: var(--standardcolor);
+    color: white;
 }
 
 section{
@@ -44,7 +44,7 @@ section{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2em 10%;
+    padding: 1.5em 8%;
 }
 
 #logo{
@@ -66,48 +66,138 @@ section{
     color: var(--standardcolor);
 }
 
+
+#home-container{
+    padding: 5px 40px 5px 0px;
+}
+
 .home{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#home-content h3{
-    font: 3em;
+#home-container > h3{
+    font-size: 2em;
     font-weight: bolder;
 }
 
-#home-content h1{
-    font-size: 6em;
+#home-container > h3:nth-of-type(2){
+    margin-bottom: 1em;
+}
+
+span{
+    color: var(--standardcolor);
+}
+
+#home-container > h1{
+    font-size: 4em;
     font-weight: bold;
     line-height: 1.5em;
 }
 
-.home-img > img{
-    width: 35vw;
-    height: 50vh;
-    border-radius: 20px;
+#home-container > p{
+    font-size: 1.5em;
 }
 
-#home-content > p{
-    font-size: 1.5em;
+.home-img > img{
+    width: 30vw;
+    height: 40vh;
+    border-radius: 20px;
 }
 
 #social-media > a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin: 3em 1.5em 3em 0px;
+    font-size: 2em;
+    margin: 1.5em 1em 2em 0px;
     width: 45px;
     height: 45px;
     border-radius: 50%;
     background: transparent;
     border: 2px solid var(--standardcolor);
-    color: var(--textcolor);
+    color: var(--standardcolor);
+    transition: .3s ease;
 }
 
-#home-content > p{
+#social-media > a:hover{
+    background-color: var(--standardcolor);
+    color: var(--bgcolor2);
+    box-shadow: 0 0 20px var(--standardcolor);
+}
+
+#home-container > div#number > p{
+    font-size: 1.5em;
     padding: 5px 5px 5px 0px;
     background: transparent;
     color: var(--textcolor);
 }
+
+#home-container > div#number p:hover{
+    color: var(--standardcolor);
+}
+
+.button{
+    display: inline-block;
+    padding: 1.2em 2.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 1em;
+    background-color: var(--standardcolor);
+    color: var(--bgcolor);
+    border-radius: 2em;
+    box-shadow: 0 0 1em var(--standardcolor);
+    letter-spacing: 1px;
+}
+
+.button:hover{
+    box-shadow: none;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+    background-color: var(--bgcolor2);
+}
+
+div#self-img > img{
+    width: 30vw;
+    height: 40vw;
+    border-radius: 20px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4em;
+}
+
+#about-container > h2{
+    text-align: left;
+    line-height: 1.5em;
+}
+
+#about-container > h3{
+    font-size: 2.5em;
+}
+
+#about-container > p{
+    font-size: 1.5em;
+    margin: 2em 0px 2.5em;
+}
+
+#services > h2{
+    margin-bottom: 3em;
+}
+
+#services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+ 
+
