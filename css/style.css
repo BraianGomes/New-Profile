@@ -309,6 +309,40 @@ div#self-img > img{
     font-size: 2em;
 }
 
+.contacts > h2{
+    margin-bottom: 2.5em;
+}
+
+.contacts > form{
+    max-width: 1000px;
+    margin: 1em auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contacts > form > .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacts > form > .inputBox > input,
+.contacts > form > textarea{
+    width: 100%;
+    padding: 20px;
+    font-size: 15px;
+    color: var(--textcolor);
+    background-color: var(--bgcolor2);
+    border-radius: 15px;
+    margin: 10px 0px;
+}
+
+.contacts > form > .inputBox > input{
+    width: 49%;
+}
+
+
+
 
  
 
