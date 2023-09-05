@@ -66,22 +66,22 @@ section{
 }
 
 
-#home-container{
+#homeContainer{
     padding: 5px 40px 5px 0px;
 }
 
-.home{
+#home{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#home-container > h3{
+#homeContainer > h3{
     font-size: 2em;
     font-weight: bolder;
 }
 
-#home-container > h3:nth-of-type(2){
+#homeContainer > h3:nth-of-type(2){
     margin-bottom: 1em;
 }
 
@@ -89,13 +89,13 @@ span{
     color: var(--standardcolor);
 }
 
-#home-container > h1{
+#homeContainer > h1{
     font-size: 4em;
     font-weight: bold;
     line-height: 1.5em;
 }
 
-#home-container > p{
+#homeContainer > p{
     font-size: 1.5em;
 }
 
@@ -105,7 +105,7 @@ span{
     border-radius: 20px;
 }
 
-#social-media > a{
+#socialMedia > a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +120,7 @@ span{
     transition: .3s ease;
 }
 
-#social-media > a:hover{
+#socialMedia > a:hover{
     background-color: var(--standardcolor);
     color: var(--bgcolor2);
     box-shadow: 0 0 20px var(--standardcolor);
@@ -178,25 +178,25 @@ div#self-img > img{
     font-size: 4em;
 }
 
-#about-container > h2{
+#aboutContainer > h2{
     text-align: left;
     line-height: 1.5em;
 }
 
-#about-container > h3{
+#aboutContainer > h3{
     font-size: 2.5em;
 }
 
-#about-container > p{
+#aboutContainer > p{
     font-size: 1.5em;
     margin: 2em 0px 2.5em;
 }
 
 #services > h2{
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
-#services-container{
+#servicesContainer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,7 +204,7 @@ div#self-img > img{
     gap: 1.5em;
 }
 
-#services-container > .box{
+#servicesContainer > .box{
     flex: 1 1 30em;
     background-color: var(--bgcolor2);
     padding: 3em 2em 4em;
@@ -213,7 +213,7 @@ div#self-img > img{
     transition: .4s ease;
 }
 
-#services-container > .box:hover{
+#servicesContainer > .box:hover{
     border: 2px solid var(--standardcolor);
     transform: scale(105%);
 }
@@ -238,7 +238,7 @@ div#self-img > img{
 
 .portfolio > h2{
     font-size: 4em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 
@@ -254,7 +254,7 @@ div#self-img > img{
 
 #portfolioContainer{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 2.5em;
 }
@@ -385,12 +385,26 @@ div#self-img > img{
     color: var(--bgcolor2);
 }
 
+/*//////////////////MEDIAS/////////////////////*/
+@media (max-width: 617px){
+    .portfolioContainer{
+        grid-template-columns: 1fr ;
+    }
+}
 
 
 
 @media (max-width: 768px) {
     #logo {
         cursor: pointer;
+    }
+
+    .cabeca{
+        justify-content: center;
+    }
+
+    section {
+        padding: 150px 3% 30px;
     }
 
     #navbar {
@@ -415,12 +429,44 @@ div#self-img > img{
         margin: 3em 0px;
     }
 
-    .cabeca{
-        justify-content: center;
+    #home{
+        flex-direction: column;
     }
 
-    section {
-        padding: 150px 3% 30px;
+    #home-container > h3{
+        font-size: 2em;
+    }
+
+    #home-container > h1{
+        font-size: 2.5em;
+    }
+
+    .home-img > img{
+        width: 35vw;
+        height: 30vh;
+        margin-top: 3em;
+    }
+
+    #about{
+        flex-direction: column-reverse;
+    }
+
+    #about > img{
+        width: 35vw;
+        height: 30vh;
+        margin-top: 3em;
+    }
+
+    #services > h2{
+        margin-bottom: 3em;
+    }
+
+    #portfolio > h2{
+        margin-bottom: 3em;
+    }
+
+    #portfolioContainer{
+        grid-template-columns: repeat(1,1fr);
     }
 
     .footer {
@@ -429,13 +475,25 @@ div#self-img > img{
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .cabeca {
         padding:  2em 3%;
     }
 
     section {
         padding: 150px 3% 30px;
+    }
+
+    #services{
+        padding-bottom: 6em;
+    }
+
+    #portfolio{
+        padding-bottom: 6em;
+    }
+
+    #contacts{
+        min-height: auto;
     }
 
     .footer {

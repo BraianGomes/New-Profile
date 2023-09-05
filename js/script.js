@@ -27,5 +27,6 @@ window.onscroll = () => {
     navbar.classList.toggle("active");
   };
 
+  menuBar.classList.remove('bx-x');
   navbar.classList.remove('active');
 };
