@@ -193,7 +193,7 @@ div#self-img > img{
 }
 
 #services > h2{
-    margin-bottom: 5em;
+    margin-bottom: 2em;
 }
 
 #servicesContainer{
@@ -205,7 +205,7 @@ div#self-img > img{
 }
 
 #servicesContainer > .box{
-    flex: 1 1 30em;
+    flex: 1 1 15em;
     background-color: var(--bgcolor2);
     padding: 3em 2em 4em;
     border-radius: 2em;
@@ -242,6 +242,7 @@ div#self-img > img{
 
 #portfolioBox > img{
     width: 100%;
+    height: 100%;
 }
 
 #portfolioBox > img:hover{
@@ -282,7 +283,7 @@ div#self-img > img{
 }
 
 #portfolioBox:hover > #portfolioLayer{
-    transform: translate(0%);
+    transform: translateY(0%);
 }
 
 #portfolioLayer > h4{
@@ -461,11 +462,14 @@ div#self-img > img{
     #portfolio > h2{
         margin-bottom: 3em;
     }
-
+/*////////////////////////////////////////
     #portfolioContainer{
         grid-template-columns: repeat(1,1fr);
     }
 
+    ARRUMAR
+    ARRUMAR
+/*???????????????????????????????????/*/
     .footer {
         padding: 35px 3%;
     }
