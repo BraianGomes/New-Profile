@@ -175,7 +175,7 @@ div#self-img > img{
 
 .heading{
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
 }
 
 #aboutContainer > h2{
@@ -386,7 +386,7 @@ div#self-img > img{
 /*//////////////////MEDIAS/////////////////////*/
 @media (max-width: 617px){
     .portfolioContainer{
-        grid-template-columns: 1fr ;
+        grid-template-columns:1fr ;
     }
 }
 
@@ -442,7 +442,7 @@ div#self-img > img{
     .home-img > img{
         width: 35vw;
         height: 30vh;
-        margin-top: 3em;
+        margin-top: 1em;
     }
 
     #about{
@@ -452,24 +452,21 @@ div#self-img > img{
     #about > img{
         width: 35vw;
         height: 30vh;
-        margin-top: 3em;
+        margin-top: 1em;
     }
 
     #services > h2{
-        margin-bottom: 3em;
+        margin-bottom: 1em;
     }
 
     #portfolio > h2{
         margin-bottom: 3em;
     }
-/*////////////////////////////////////////
-    #portfolioContainer{
-        grid-template-columns: repeat(1,1fr);
-    }
 
-    ARRUMAR
-    ARRUMAR
-/*???????????????????????????????????/*/
+    #portfolioContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+ 
     .footer {
         padding: 35px 3%;
     }
