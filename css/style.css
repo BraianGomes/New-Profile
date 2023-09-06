@@ -175,7 +175,7 @@ div#self-img > img{
 
 .heading{
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 #aboutContainer > h2{
@@ -385,6 +385,10 @@ div#self-img > img{
 
 /*//////////////////MEDIAS/////////////////////*/
 @media (max-width: 617px){
+
+    .heading{
+        font-size: 1.8em;
+    }
     .portfolioContainer{
         grid-template-columns:1fr ;
     }
@@ -453,6 +457,10 @@ div#self-img > img{
         width: 35vw;
         height: 30vh;
         margin-top: 1em;
+    }
+
+    .heading{
+        font-size: 2.5em;
     }
 
     #services > h2{
