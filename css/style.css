@@ -229,7 +229,7 @@ div#self-img > img{
 
 .box > p{
     font-size: 1.5em;
-    margin: 1em 0px 3em;
+    margin: 1em 0px 1em;
 }
 
 .portfolio{
@@ -237,7 +237,7 @@ div#self-img > img{
 }
 
 .portfolio > h2{
-    margin-bottom: 4em;
+    margin-bottom: 3em;
 }
 
 #portfolioBox > img{
@@ -299,7 +299,6 @@ div#self-img > img{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-left: 280px;
     width: 5em;
     height: 5em;
     background-color: var(--textcolor);
@@ -311,6 +310,7 @@ div#self-img > img{
 }
 
 .contacts > h2{
+    font-size: 3em;
     margin-bottom: 2.5em;
 }
 
