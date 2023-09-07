@@ -30,7 +30,7 @@ body{
 }
 
 section{
-    height: 100vh;
+    height: auto;
     padding: 10em 10% 2em;
 }
 
@@ -193,7 +193,7 @@ div#self-img > img{
 }
 
 #services > h2{
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 
 #servicesContainer{
@@ -207,7 +207,7 @@ div#self-img > img{
 #servicesContainer > .box{
     flex: 1 1 15em;
     background-color: var(--bgcolor2);
-    padding: 3em 2em 4em;
+    padding: 2em 1.5em 3em;
     border-radius: 2em;
     text-align: center;
     transition: .4s ease;
@@ -252,7 +252,7 @@ div#self-img > img{
 
 #portfolioContainer{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 2.5em;
 }
@@ -460,11 +460,17 @@ div#self-img > img{
     }
 
     .heading{
-        font-size: 2.5em;
+        font-size: 3em;
+    }
+
+    #servicesContainer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
     }
 
     #services > h2{
-        margin-bottom: 1em;
+        margin-bottom: 3em;
     }
 
     #portfolio > h2{
@@ -472,7 +478,7 @@ div#self-img > img{
     }
 
     #portfolioContainer{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
  
     .footer {
