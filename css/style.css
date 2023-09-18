@@ -27,6 +27,7 @@ html{
 body{
     background-color: var(--bgcolor);
     color: white;
+    transition: .5s;
 }
 
 section{
@@ -34,6 +35,62 @@ section{
     padding: 10em 10% 2em;
 }
 
+.modes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    margin-top: 20em;
+    height: 250px;
+}
+
+.modes > h3{
+    color: white;
+    padding: 20px;
+    font-size: 2em;
+}
+
+.rails{
+    position: relative;
+    width: 350px;
+    height: 150px;
+    background-color: darkgrey;
+    border-radius: 150px;
+    cursor: pointer;
+}
+
+.rails > .indicators{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    transform: scale(.9);
+    left: 0;
+    transition: 0.4s;
+}
+
+/*/////Adicionando Dark Mode///////////*/
+
+.rails.dark{
+    background-color: darkgray;
+}
+
+.rails.dark > .indicators{
+    background-color: var(--textcolor);
+    left: 200px;
+}
+
+body.dark{
+    background-color: white;
+}
+
+body.dark h3{
+    color: black;
+}
+
+/*/////////////////////////////////////*/
 .cabeca{
     display: flex;
     justify-content: space-between;

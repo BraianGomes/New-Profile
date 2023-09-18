@@ -30,3 +30,15 @@ window.onscroll = () => {
   menuBar.classList.remove("bx-x");
   navbar.classList.remove("active");
 };
+
+
+//////////////////////Dark Light Mode///////////////////////////////
+
+let rail = document.querySelector('.rails');
+let body = document.querySelector('body')
+
+rail.addEventListener('click', ()=>{
+  rail.classList.toggle('dark')
+  body.classList.toggle('dark')
+})
+
