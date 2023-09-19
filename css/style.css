@@ -41,10 +41,10 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     top: 20%;
-    left: 80%;
+    left: 85%;
 }
 
 .modes > h3{
@@ -55,8 +55,8 @@ section{
 
 .rails{
     position: relative;
-    width: 40px;
-    height: 20px;
+    width: 36px;
+    height: 18px;
     background-color: darkgrey;
     border-radius: 10px;
     cursor: pointer;
@@ -64,8 +64,8 @@ section{
 
 .rails > .indicators{
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     background-color: black;
     border-radius: 50%;
     transform: scale(.9);
@@ -81,14 +81,15 @@ section{
 
 .rails.dark > .indicators{
     background-color: var(--textcolor);
-    left: 20px;
+    left: 17px;
 }
 
-body.dark{
+body.dark section,
+body.dark header{
     background-color: white;
 }
 
-body.dark h3{
+body.dark .modes > h3{
     color: black;
 }
 
@@ -108,6 +109,9 @@ body.dark h3{
 }
 
 #logo{
+    position: relative;
+    top: 5%;
+    left: 50%;
     width: 80px;
     height: 80px;
     border-radius: 50%;
