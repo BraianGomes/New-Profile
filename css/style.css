@@ -87,10 +87,19 @@ section{
 body.dark section,
 body.dark header{
     background-color: white;
+    color: black;
 }
 
-body.dark .modes > h3{
+body.dark #number > p,
+body.dark .modes > h3,
+body.dark #homeContainer > h3,
+body.dark #homeContainer > p{
     color: black;
+}
+
+body.dark .box > h3,
+body.dark .box > p{
+    color: white;
 }
 
 /*/////////////////////////////////////*/
