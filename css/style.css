@@ -37,18 +37,19 @@ section{
 
 .modes{
     display: flex;
+    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: red;
-    height: 100px;
-    top: 0px;
-    left: 100px;
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: 80%;
 }
 
 .modes > h3{
     color: white;
-    padding: 10px;
+    padding: 7px;
     font-size: 1em;
 }
 
@@ -57,7 +58,7 @@ section{
     width: 40px;
     height: 20px;
     background-color: darkgrey;
-    border-radius: 150px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -93,7 +94,8 @@ body.dark h3{
 
 /*/////////////////////////////////////*/
 .cabeca{
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     justify-content: center;
     align-items: center;
     z-index: 100;
@@ -407,7 +409,6 @@ div#self-img > img{
 
 .contacts > form > .button{
     margin-top: 20px;
-    
 }
 
 #footer{
@@ -464,8 +465,6 @@ div#self-img > img{
         font-size: 15px;
     }
 }
-
-
 
 @media (max-width: 768px) {
     #logo {
