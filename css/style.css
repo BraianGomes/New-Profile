@@ -41,20 +41,21 @@ section{
     justify-content: center;
     align-items: center;
     background-color: red;
-    margin-top: 20em;
-    height: 250px;
+    height: 100px;
+    top: 0px;
+    left: 100px;
 }
 
 .modes > h3{
     color: white;
-    padding: 20px;
-    font-size: 2em;
+    padding: 10px;
+    font-size: 1em;
 }
 
 .rails{
     position: relative;
-    width: 350px;
-    height: 150px;
+    width: 40px;
+    height: 20px;
     background-color: darkgrey;
     border-radius: 150px;
     cursor: pointer;
@@ -62,8 +63,8 @@ section{
 
 .rails > .indicators{
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 20px;
+    height: 20px;
     background-color: black;
     border-radius: 50%;
     transform: scale(.9);
@@ -79,7 +80,7 @@ section{
 
 .rails.dark > .indicators{
     background-color: var(--textcolor);
-    left: 200px;
+    left: 20px;
 }
 
 body.dark{
@@ -93,7 +94,7 @@ body.dark h3{
 /*/////////////////////////////////////*/
 .cabeca{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     z-index: 100;
     background-color: var(--bgcolor);
