@@ -131,7 +131,7 @@ body.dark .box > p{
     display: none;
     position: absolute;
     top: 80%;
-    left: 0px;
+    left: 0;
     width: 25%;
     padding: 15px 3%;
     background-color: var(--bgcolor);
@@ -467,10 +467,6 @@ span{
     flex-wrap: wrap;
     padding: 25px 10%;
     background-color: var(--bgcolor2);
-}
-
-#footer{
-    padding: 20px 7%; 
 }
 
 #footerText > p{
