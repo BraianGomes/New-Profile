@@ -8,7 +8,7 @@
     }
 
     .cabeca {
-        padding:  2em 3%;
+        padding: 2em 3%;
     }
 
     section {
@@ -32,15 +32,6 @@
     }
 }
 
-@media (max-width: 1200px){
-    html {
-        font-size: 50%;
-    }
-
-    #homeContainer > h3{
-        margin-top: 3em;
-    }
-}
 
 
 

@@ -20,7 +20,7 @@
 }
 
 html{
-    font-size: 65%;
+    font-size: 55%;
     overflow-x: hidden;
 }
 
@@ -164,6 +164,7 @@ body.dark .box > p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 8em;
 }
 
 #home-container > h1{
