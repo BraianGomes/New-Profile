@@ -1,0 +1,44 @@
+
+
+@media (max-width: 991px) {
+    .cabeca {
+        padding:  2em 3%;
+    }
+
+    section {
+        padding: 150px 3% 30px;
+    }
+
+    #services{
+        padding-bottom: 7em;
+    }
+
+    #portfolio{
+        padding-bottom: 7em;
+    }
+
+    #contacts{
+        min-height: auto;
+    }
+
+    .footer {
+        padding: 35px 3%;
+    }
+}
+
+@media (max-width: 1200px){
+    html {
+        font-size: 50%;
+    }
+
+    #homeContainer > h3{
+        margin-top: 3em;
+    }
+}
+
+
+
+
+
+ 
+
