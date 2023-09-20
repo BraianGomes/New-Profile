@@ -74,7 +74,6 @@ section{
 }
 
 /*/////Adicionando Dark Mode///////////*/
-
 .rails.dark{
     background-color: darkgray;
 }
@@ -140,8 +139,6 @@ body.dark .box > p{
     box-shadow: 0px 8px 15px rgba(0, 0, 0, .2);
 }
 
-
-
 #navbar a{
     display: block;
     font-size: 2em;
@@ -164,8 +161,15 @@ body.dark .box > p{
 
 #home{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#home-container > h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1.5em;
 }
 
 #homeContainer > h3{
@@ -182,20 +186,26 @@ span{
     color: var(--standardcolor);
 }
 
-#homeContainer > h1{
-    font-size: 4em;
-    font-weight: bold;
-    line-height: 1.5em;
-}
-
 #homeContainer > p{
     font-size: 1.5em;
 }
 
 .home-img > img{
-    width: 30vw;
-    height: 40vh;
+    width: 35vw;
+    height: 35vh;
+    margin-top: 1em;
     border-radius: 20px;
+}
+
+#about{
+    flex-direction: column-reverse;
+    text-align: start;
+}
+
+#about > img{
+    width: 35vw;
+    height: 30vh;
+    margin-top: 1em;
 }
 
 #socialMedia > a{
@@ -260,7 +270,7 @@ span{
     background-color: var(--bgcolor2);
 }
 
-div#self-img > img{
+#selfImg > img{
     width: 30vw;
     height: 40vw;
     border-radius: 20px;
@@ -272,11 +282,13 @@ div#self-img > img{
 }
 
 #aboutContainer > h2{
-    text-align: left;
+    text-align: center;
     line-height: 1.5em;
+    padding: 20px;
 }
 
 #aboutContainer > h3{
+    text-align: start;
     font-size: 2.5em;
 }
 
@@ -286,11 +298,12 @@ div#self-img > img{
 }
 
 #services > h2{
-    margin-bottom: 1.5em;
+    margin-bottom: 2.5em;
 }
 
 #servicesContainer{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -308,7 +321,7 @@ div#self-img > img{
 
 #servicesContainer > .box:hover{
     border: 2px solid var(--standardcolor);
-    transform: scale(105%);
+    transform: scale(103%);
 }
 
 .box > i{
@@ -345,7 +358,7 @@ div#self-img > img{
 
 #portfolioContainer{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     align-items: center;
     gap: 2.5em;
 }
@@ -454,15 +467,19 @@ div#self-img > img{
     background-color: var(--bgcolor2);
 }
 
+#footer{
+    padding: 20px 7%; 
+}
+
 #footerText > p{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #footerTop > a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 12px;
+    padding: 10px;
     background-color: var(--standardcolor);
     border-radius: 20%;
 }
@@ -472,90 +489,8 @@ div#self-img > img{
 }
 
 #footerTop > a > i{
-    font-size: 25px;
+    font-size: 15px;
     color: var(--bgcolor2);
 }
 
 
-
-
-/*//////////////////MEDIAS/////////////////////*/
-@media (max-width: 617px){
-   
-}
-
-@media (max-width: 768px) {
-  
-
-  
-
-
-
-
-  
-
-    #home{
-        flex-direction: column;
-    }
-
-    #home-container > h3{
-        font-size: 2em;
-    }
-
-    #home-container > h1{
-        font-size: 2.5em;
-    }
-
-    .home-img > img{
-        width: 35vw;
-        height: 30vh;
-        margin-top: 1em;
-    }
-
-    #about{
-        flex-direction: column-reverse;
-    }
-
-    #about > img{
-        width: 35vw;
-        height: 30vh;
-        margin-top: 1em;
-    }
-
-    .heading{
-        font-size: 3em;
-    }
-
-    #servicesContainer{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-    }
-
-    #services > h2{
-        margin-bottom: 3em;
-    }
-
-    #portfolio > h2{
-        margin-bottom: 3em;
-    }
-
-    #portfolioContainer{
-        grid-template-columns: repeat(1,1fr);
-    }
- 
-    #footer{
-        padding: 20px 7%; 
-    }
-    
-    #footerText > p{
-        font-size: 15px;
-    }
-    
-    #footerTop > a{
-        padding: 10px;
-    }
-    
-    #footerTop > a > i{
-        font-size: 15px;
-    }
-}
