@@ -38,6 +38,9 @@
         padding: 150px 3% 30px;
     }
 
+    #logo{
+        cursor: none;
+    }
 
     #navbar {
     display: block;
