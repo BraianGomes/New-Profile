@@ -61,7 +61,7 @@
     box-shadow: 0px 8px 15px var(--standardcolor);
   }
 
-  .homeImg > img,
+  #homeImg > img,
   #selfImg > img{
     width: 350px;
     height: 400px;

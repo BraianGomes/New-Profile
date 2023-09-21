@@ -191,22 +191,11 @@ span{
     font-size: 1.5em;
 }
 
-.homeImg > img{
-    width: 35vw;
-    height: 35vh;
+#homeImg > img{
+    width: 30vw;
+    height: 25vh;
     margin-top: 1em;
     border-radius: 20px;
-}
-
-#about{
-    flex-direction: column-reverse;
-    text-align: start;
-}
-
-#about > img{
-    width: 35vw;
-    height: 30vh;
-    margin-top: 1em;
 }
 
 #socialMedia > a{
@@ -267,6 +256,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: start;
     gap: 2.5em;
     background-color: var(--bgcolor2);
 }
@@ -283,7 +273,7 @@ span{
 }
 
 #aboutContainer > h2{
-    text-align: center;
+    text-align: start;
     line-height: 1.5em;
     padding: 20px;
 }
