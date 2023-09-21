@@ -113,13 +113,13 @@ body.dark .box > p{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5em 8%;
+    padding: 2em 10%;
 }
 
 #logo{
     position: relative;
     top: 5%;
-    left: 60%;
+    left: 58%;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -176,7 +176,7 @@ body.dark .box > p{
 #homeContainer > h3{
     font-size: 2em;
     font-weight: bolder;
-    margin-top: 1em;
+    margin:1em 0px;
 }
 
 #homeContainer > h3:nth-of-type(2){
