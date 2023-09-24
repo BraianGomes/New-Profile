@@ -104,7 +104,7 @@ body.dark .box > p{
 /*/////////////////////////////////////*/
 .cabeca{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1, 1fr;
     justify-content: center;
     align-items: center;
     z-index: 100;
@@ -118,8 +118,8 @@ body.dark .box > p{
 
 #logo{
     position: relative;
-    top: 5%;
-    left: 58%;
+    top: 3%;
+    left: 0%;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -127,23 +127,45 @@ body.dark .box > p{
     cursor: pointer;
 }
 
-#navbar {
+#navbar{
     display: none;
+}
+
+#block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: 0;
-    width: 25%;
+    width: 30%;
     padding: 15px 3%;
     background-color: var(--bgcolor);
     border-radius: 0px 15px 15px 0px;
     box-shadow: 0px 5px 15px var(--standardcolor);
 }
 
-#navbar > a{
-    display: block;
-    font-size: 2em;
+#block > a{
+    font-size: 15px;
     color: var(--textcolor);
     margin: 2.5em 10px;
+    transition: .3s;
+    animation: slideNav .5s ease forwards;
+    animation-delay: calc(.2s * var(--bar));
+}
+
+@keyframes slideNav {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 #navbar.active{
@@ -191,11 +213,41 @@ span{
     font-size: 1.5em;
 }
 
+#homeContainer > h3 > span{
+    animation: swing 1s alternate-reverse infinite;
+}
+
+@keyframes swing {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 #homeImg > img{
     width: 30vw;
     height: 25vh;
     margin-top: 1em;
     border-radius: 20px;
+    animation: selfAppear 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes selfAppear {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 #socialMedia > a{
@@ -262,9 +314,22 @@ span{
 }
 
 #selfImg > img{
-    width: 30vw;
-    height: 40vw;
-    border-radius: 20px;
+    width: 150px;
+    height: 200px;
+    border-radius: 10%;
+    animation: selfFloat 4s ease-in-out infinite;
+}
+
+@keyframes selfFloat {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateX(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .heading{

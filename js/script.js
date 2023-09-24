@@ -17,7 +17,7 @@ window.onscroll = () => {
       });
     }
   });
-  /*////////////////////////////////////////////////////*/
+  /*///////////////////Block Menu/////////////////////////////////*/
 
   let menuBar = document.querySelector("#logo");
   let navbar = document.querySelector("#navbar");
@@ -40,5 +40,5 @@ let body = document.querySelector('body')
 rail.addEventListener('click', ()=>{
   rail.classList.toggle('dark')
   body.classList.toggle('dark')
-})
+});
 
