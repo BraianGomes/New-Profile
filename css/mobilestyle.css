@@ -22,6 +22,7 @@
 html{
     font-size: 55%;
     overflow-x: hidden;
+    scroll-padding-top: 2.5em;
 }
 
 body{
@@ -32,7 +33,7 @@ body{
 
 section{
     height: auto;
-    padding: 8em 5% 2em;
+    padding: 8em 3% 2em;
 }
 
 .modes{

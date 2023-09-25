@@ -32,36 +32,36 @@
   }
 
   section {
-    padding: 130px 3% 30px;
+    padding: 8em 5% 2.5em;
   }
 
   @keyframes coverImage {
     100% {
-        transform: translateY(0);
-        opacity: 1;
-        box-shadow: 0 0 30px var(--standardcolor);    
+      transform: translateY(0);
+      opacity: 1;
+      box-shadow: 0 0 0px var(--standardcolor);
     }
-}
+  }
 
-.cabeca{
-  display: grid;
-  grid-template-columns:1fr;
-}
+  .cabeca {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
-.modes{
-  left: 92%;
-}
+  .modes {
+    left: 90%;
+  }
 
-#logo {
-  left: 0%;
-  cursor: default;
-}
+  #logo {
+    left: 0%;
+    cursor: default;
+  }
 
-  #navbar{
+  #navbar {
     display: block;
   }
 
-  #block{
+  #block {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -75,42 +75,41 @@
     padding: 2px;
     border-radius: 15px;
     box-shadow: none;
-}
+  }
 
-#block > a{
-padding: 5px 5%;
-animation: slideNav .3s ease forwards;
-animation-delay: calc(.2s * var(--bar));
-}
+  #block > a {
+    padding: 5px 5%;
+    animation: slideNav 0.3s ease forwards;
+    animation-delay: calc(0.2s * var(--bar));
+  }
 
+  @keyframes slideNav {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
 
-@keyframes slideNav {
-0% {
-    transform: translateY(-100px);
-    opacity: 0;
-}
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
-100% {
-    transform: translateY(0);
-    opacity: 1;
-}
-}
+  body.dark #block > a {
+    color: black;
+  }
 
-body.dark #block > a{
-  color: black;
-}
-
-body.dark #block > a:hover{
-  color: var(--standardcolor);
-}
+  body.dark #block > a:hover {
+    color: var(--standardcolor);
+  }
 
   #homeImg > img,
-  #selfImg > img{
+  #selfImg > img {
     width: 350px;
     height: 400px;
     margin-top: 1em;
     border-radius: 20px;
-}
+  }
 
   #services {
     padding-bottom: 7em;
@@ -130,11 +129,11 @@ body.dark #block > a:hover{
     padding: 35px 3%;
   }
 
-  #footerText > p{
+  #footerText > p {
     font-size: 2em;
   }
 
-  #footerTop > a > i{
+  #footerTop > a > i {
     font-size: 3em;
   }
 }
