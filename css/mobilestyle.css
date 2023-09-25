@@ -125,6 +125,14 @@ body.dark .box > p{
     border-radius: 50%;
     border: 2px solid var(--standardcolor);
     cursor: pointer;
+    animation: coverImage 3s infinite;
+}
+
+@keyframes coverImage {
+    100% {
+        transform: translateY(0);
+        box-shadow: 0 0 30px var(--standardcolor);    
+    }
 }
 
 #navbar{
