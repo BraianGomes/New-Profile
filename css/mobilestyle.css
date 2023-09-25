@@ -195,17 +195,17 @@ body.dark .box > p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 8em;
+    margin-top: 10em;
 }
 
-#home-container > h1{
+#homeContainer > h1{
     font-size: 2.5em;
     font-weight: bold;
     line-height: 1.5em;
 }
 
 #homeContainer > h3{
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bolder;
     margin:1em 0px;
 }
