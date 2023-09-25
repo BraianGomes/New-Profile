@@ -42,10 +42,10 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    top: 5%;
+    left: 85%;
     width: 55px;
     height: 55px;
-    top: 20%;
-    left: 85%;
 }
 
 .modes > h3{
@@ -104,16 +104,13 @@ body.dark .box > p{
 
 /*/////////////////////////////////////*/
 .cabeca{
-    display: grid;
-    grid-template-columns: 1, 1fr;
-    justify-content: center;
-    align-items: center;
     z-index: 100;
     background-color: var(--bgcolor);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    height: 120px;
     padding: 2em 10%;
 }
 
@@ -129,10 +126,16 @@ body.dark .box > p{
     animation: coverImage 3s infinite;
 }
 
+#burguer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 @keyframes coverImage {
     100% {
         transform: translateY(0);
-        box-shadow: 0 0 30px var(--standardcolor);    
+        box-shadow: 0 0 40px var(--standardcolor);    
     }
 }
 
@@ -142,32 +145,33 @@ body.dark .box > p{
 
 #block{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    text-align: center;
     position: absolute;
-    top: 90%;
-    left: 0;
-    width: 30%;
-    padding: 15px 3%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 130px;
+    padding: 8px 3%;
     background-color: var(--bgcolor);
-    border-radius: 0px 15px 15px 0px;
-    box-shadow: 0px 5px 15px var(--standardcolor);
+    border-radius: 0px 0px 10px 10px;
 }
 
 #block > a{
     font-size: 15px;
     color: var(--textcolor);
+    padding: 10px;
     margin: 2.5em 10px;
     transition: .3s;
-    animation: slideNav .3s ease forwards;
-    animation-delay: calc(.2s * var(--bar));
+    animation: slideNav .2s ease forwards;
+    animation-delay: calc(.1s * var(--bar));
 }
 
 @keyframes slideNav {
     0% {
-        transform: translateX(-100px);
+        transform: translateX(-200px);
         opacity: 0;
     }
 
