@@ -152,7 +152,7 @@ body.dark .box > p{
     color: var(--textcolor);
     margin: 2.5em 10px;
     transition: .3s;
-    animation: slideNav .5s ease forwards;
+    animation: slideNav .3s ease forwards;
     animation-delay: calc(.2s * var(--bar));
 }
 
@@ -172,8 +172,8 @@ body.dark .box > p{
     display: block;
 }
 
-#navbar > a:hover,
-#navbar > a.active{
+#block > a:hover,
+#block > a.active{
     color: var(--standardcolor);
 }
 
