@@ -436,7 +436,7 @@ span{
 
 .perc{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     position: relative;
     width: 100%;
@@ -444,19 +444,21 @@ span{
 
 .perc > h3{
     position: absolute;
-    font-size: 3em;
+    font-size: 2.5em;
     transform: translate(-50%, -50%);
-    top: 50%;
-    left: 15%;
+    top: -100px;
+    left: 20%;
 }
 
 .perc > h5{
     position: absolute;
-    font-size: 3em;
+    font-size: 3.5em;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 60%;
 }
+
+
 
 #html > span{
     background-color: var(--bgcolor);
