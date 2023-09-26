@@ -33,7 +33,7 @@ body{
 
 section{
     height: auto;
-    padding: 8em 3em;
+    padding: 10em 3em;
 }
 
 .modes{
@@ -156,12 +156,13 @@ body.dark .box > p{
     height: 80px;
     padding: 8px 3%;
     background-color: var(--bgcolor);
+    opacity: .8;
 }
 
 #block > a{
-    font-size: 13px;
+    font-size: 15px;
     color: var(--textcolor);
-    padding: 7px;
+    padding: 0px 1em;
     transition: .3s;
     animation: slideNav .2s ease forwards;
     animation-delay: calc(.1s * var(--bar));
@@ -169,12 +170,12 @@ body.dark .box > p{
 
 @keyframes slideNav {
     0% {
-        transform: translateX(-200px);
+        transform: translateY(-200px);
         opacity: 0;
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -365,7 +366,7 @@ span{
 }
 
 #services > h2{
-    margin-bottom: 2.5em;
+    margin: 2em 0em;
 }
 
 #servicesContainer{
@@ -410,7 +411,7 @@ span{
 }
 
 .portfolio > h2{
-    margin-bottom: 3em;
+    margin: 2em 0em;
 }
 
 #portfolioBox > img{
@@ -486,7 +487,7 @@ span{
 .contacts > h2{
     text-align: center;
     font-size: 3em;
-    margin-bottom: 3em;
+    margin: 3em 0em;
 }
 
 .contacts > form{
