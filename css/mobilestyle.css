@@ -202,13 +202,13 @@ body.dark .box > p{
 }
 
 #homeContainer > h1{
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bold;
     line-height: 1.5em;
 }
 
 #homeContainer > h3{
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bolder;
     margin:1em 0px;
 }
@@ -222,7 +222,7 @@ span{
 }
 
 #homeContainer > p{
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 #homeContainer > h3 > span{
@@ -406,8 +406,112 @@ span{
     margin: 1em 0px 1em;
 }
 
-.portfolio{
+.skills{
     background-color: var(--bgcolor2);
+}
+
+.skills > h2{
+    margin: 2em 0em;
+}
+
+#skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 7em;
+}
+
+#html,
+#css,
+#java{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin-top: 6em;
+}
+
+#html > h3,
+#css > h3,
+#java > h3{
+    color: var(--standardcolor);
+    font-size: 1.5em;
+    position: relative;
+    top: 0%;
+    left: 40%;
+}
+
+#html > span{
+    background-color: white;
+    position: absolute;
+    width: 9px;
+    height: 2px;
+    border-radius: 2px;
+    transform-origin: 32px;
+    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    animation: html 3s linear infinite;
+    animation-delay: calc(var(--i) * (3s / 50));
+}
+
+@keyframes html {
+    0% {
+        background-color: var(--standardcolor);
+    }
+
+    100% {
+        background-color: var(--bgcolor);
+    }
+}
+
+#css > span{
+    background-color: white;
+    position: absolute;
+    width: 9px;
+    height: 2px;
+    border-radius: 2px;
+    transform-origin: 32px;
+    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    animation: css 3s linear infinite;
+    animation-delay: calc(var(--i) * (3s / 50));
+}
+
+@keyframes css {
+    0% {
+        background-color: var(--standardcolor);
+    }
+
+    50% {
+        background-color: var(--bgcolor);
+    }
+}
+
+#java > span{
+    background-color: white;
+    position: absolute;
+    width: 9px;
+    height: 2px;
+    border-radius: 2px;
+    transform-origin: 32px;
+    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    animation: java 3s linear infinite;
+    animation-delay: calc(var(--i) * (3s / 50));
+}
+
+@keyframes java {
+    0% {
+        background-color: var(--standardcolor);
+    }
+
+    50% {
+        background-color: var(--bgcolor);
+    }
+}
+
+.portfolio{
+    background-color: var(--bgcolor);
 }
 
 .portfolio > h2{
@@ -482,48 +586,6 @@ span{
 
 #portfolioLayer > a > i{
     font-size: 2em;
-}
-
-.contacts > h2{
-    text-align: center;
-    font-size: 3em;
-    margin: 3em 0em 1em;
-}
-
-.contacts > form{
-    max-width: 1000px;
-    margin: 1em auto;
-    text-align: center;
-    margin-bottom: 3em;
-}
-
-.contacts > form > .inputBox{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contacts > form > .inputBox > input,
-.contacts > form > textarea{
-    width: 100%;
-    padding: 20px;
-    font-size: 15px;
-    color: var(--textcolor);
-    background-color: var(--bgcolor2);
-    border-radius: 15px;
-    margin: 10px 0px;
-}
-
-.contacts > form > .inputBox > input{
-    width: 49%;
-}
-
-.contacts > form > textarea{
-    resize: none;
-}
-
-.contacts > form > .button{
-    margin-top: 20px;
 }
 
 #footer{
