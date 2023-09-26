@@ -352,7 +352,7 @@ span{
 #aboutContainer > h2{
     text-align: start;
     line-height: 1.5em;
-    padding: 20px;
+    margin-bottom: 1em;
 }
 
 #aboutContainer > h3{
