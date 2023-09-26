@@ -415,11 +415,12 @@ span{
 }
 
 #skill{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
     align-items: center;
-    margin-bottom: 7em;
+    gap: 5em;
+    margin: 0em 2em 6em 2em;
 }
 
 #html,
@@ -429,8 +430,8 @@ span{
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 64px;
-    height: 64px;
+    width: 24px;
+    height: 24px;
     margin-top: 6em;
 }
 
@@ -439,19 +440,20 @@ span{
 #java > h3{
     color: var(--standardcolor);
     font-size: 1.5em;
-    position: relative;
-    top: 0%;
-    left: 40%;
+}
+
+.perc{
+    font-size: 2em;
 }
 
 #html > span{
-    background-color: white;
+    background-color: var(--bgcolor);
     position: absolute;
-    width: 9px;
-    height: 2px;
+    width: 7px;
+    height: 1.5px;
     border-radius: 2px;
-    transform-origin: 32px;
-    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    transform-origin: 24px;
+    transform: scale(2.2) rotate(calc(var(--i) * (324deg / 50)));
     animation: html 3s linear infinite;
     animation-delay: calc(var(--i) * (3s / 50));
 }
@@ -467,13 +469,13 @@ span{
 }
 
 #css > span{
-    background-color: white;
+    background-color: var(--bgcolor);
     position: absolute;
-    width: 9px;
-    height: 2px;
+    width: 7px;
+    height: 1.5px;
     border-radius: 2px;
-    transform-origin: 32px;
-    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    transform-origin: 24px;
+    transform: scale(2.2) rotate(calc(var(--i) * (300deg / 50)));
     animation: css 3s linear infinite;
     animation-delay: calc(var(--i) * (3s / 50));
 }
@@ -489,13 +491,13 @@ span{
 }
 
 #java > span{
-    background-color: white;
+    background-color: var(--bgcolor);
     position: absolute;
-    width: 9px;
-    height: 2px;
+    width: 7px;
+    height: 1.5px;
     border-radius: 2px;
-    transform-origin: 32px;
-    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    transform-origin: 24px;
+    transform: scale(2.2) rotate(calc(var(--i) * (240deg / 50)));
     animation: java 3s linear infinite;
     animation-delay: calc(var(--i) * (3s / 50));
 }
