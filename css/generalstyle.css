@@ -110,15 +110,19 @@
   }
 
   #services {
-    padding-bottom: 7em;
+    padding-bottom: 4em;
   }
 
   #portfolio {
-    padding-bottom: 7em;
+    padding-bottom: 4em;
   }
 
   #contacts {
     min-height: auto;
+  }
+
+  #contacts > h2{
+    font-size: 4em;
   }
 
   #footer {
