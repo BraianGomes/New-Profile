@@ -285,6 +285,7 @@ span{
 
 #number > p{
     font-size: 1.5em;
+    width: 200px;
     padding: 5px 5px 5px 0px;
     background: transparent;
     color: var(--textcolor);
@@ -292,6 +293,7 @@ span{
 
 #number > p:hover{
     color: var(--standardcolor);
+    text-decoration: underline;
 }
 
 #number > p > i{
@@ -406,11 +408,34 @@ span{
     margin: 1em 0px 1em;
 }
 
+
+
+
 .skills{
     background-color: var(--bgcolor2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
+.loginBox{
+    position: relative;
+    width: 400px;
+    background-color: red;
+}
+
+.loginBox > h2{
+    font-size: 3em;
+    color: blue;
+    text-align: center;
+}
+
+
+
+
 .skills > h2{
+    text-align: center;
     margin: 2em 0em;
 }
 
@@ -419,7 +444,8 @@ span{
     grid-template-columns: repeat(1,1fr);
     justify-items: center;
     align-items: center;
-    gap: 20em;
+    gap: 10em;
+    margin-bottom: 8em;
 }
 
 #html,
@@ -428,7 +454,6 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     width: 100%;
     height: 120px;
     margin-top: 8em;
@@ -457,8 +482,6 @@ span{
     top: 50%;
     left: 60%;
 }
-
-
 
 #html > span{
     background-color: var(--bgcolor);
