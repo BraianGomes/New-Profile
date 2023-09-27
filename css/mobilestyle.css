@@ -411,96 +411,63 @@ span{
 
 
 
+
 .skills{
     background-color: var(--bgcolor2);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    gap: 35em;
 }
 
-#containerRotate{
+#containerHtml,
+#containerCss,
+#containerJs{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 256px;
-    height: 256px;
+    width: 128px;
+    height: 128px;
 }
 
-#containerRotate > span{
+.html{
     position: absolute;
-    left: 0;
-    width: 32px;
-    height: 6px;
-    background-color: yellow;
-    border-radius: 8px;
-    transform-origin: 128px;
-    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
-    animation: html 3s linear infinite;
-    animation-delay: calc(var(--i) * (3s / 50));
-}
-
-.loginBox{
-    position: absolute;
-    width: 400px;
+    width: 200px;
     background-color: red;
 }
 
-.loginBox > h2{
+.html > h2{
+    position: relative;
+    top: -150px;
     font-size: 3em;
-    color: blue;
+    color:var(--standardcolor);
     text-align: center;
 }
 
-
-
-
-
-
-#html,
-#css,
-#java{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 120px;
-    margin-top: 8em;
-}
-
-.perc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.html > h3{
     position: relative;
-    width: 100%;
+    top: -20px;
+    font-size: 3em;
+    color: white;
+    text-align: center;
 }
 
-.perc > h3{
-    position: absolute;
-    font-size: 2.5em;
-    transform: translate(-50%, -50%);
-    top: -100px;
-    left: 20%;
+#containerHtml{
+    margin-top: 25em;
 }
 
-.perc > h5{
+#containerHtml > span{
     position: absolute;
-    font-size: 3.5em;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 60%;
-}
-
-#html > span{
-    background-color: var(--bgcolor);
-    position: absolute;
-    width: 18px;
-    height: 2px;
-    border-radius: 2px;
-    transform-origin: 56px;
-    transform: scale(2.2) rotate(calc(var(--i) * (330deg / 50)));
+    left: 0;
+    width: 16px;
+    height: 3px;
+    background-color: yellow;
+    border-radius: 4px;
+    transform-origin: 64px;
+    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
     animation: html 3s linear infinite;
     animation-delay: calc(var(--i) * (3s / 50));
 }
@@ -515,14 +482,37 @@ span{
     }
 }
 
-#css > span{
-    background-color: var(--bgcolor);
+.css{
     position: absolute;
-    width: 18px;
-    height: 2px;
-    border-radius: 2px;
-    transform-origin: 56px;
-    transform: scale(2.2) rotate(calc(var(--i) * (315deg / 50)));
+    width: 200px;
+    background-color: red;
+}
+
+.css > h2{
+    position: relative;
+    top: -150px;
+    font-size: 3em;
+    color: blue;
+    text-align: center;
+}
+
+.css > h3{
+    position: relative;
+    top: -20px;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+#containerCss > span{
+    position: absolute;
+    left: 0;
+    width: 16px;
+    height: 3px;
+    background-color: yellow;
+    border-radius: 4px;
+    transform-origin: 64px;
+    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
     animation: css 3s linear infinite;
     animation-delay: calc(var(--i) * (3s / 50));
 }
@@ -537,19 +527,42 @@ span{
     }
 }
 
-#java > span{
-    background-color: var(--bgcolor);
+#containerJs > span{
     position: absolute;
-    width: 18px;
-    height: 2px;
-    border-radius: 2px;
-    transform-origin: 56px;
-    transform: scale(2.2) rotate(calc(var(--i) * (270deg / 50)));
-    animation: java 3s linear infinite;
+    left: 0;
+    width: 16px;
+    height: 3px;
+    background-color: yellow;
+    border-radius: 4px;
+    transform-origin: 64px;
+    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    animation: js 3s linear infinite;
     animation-delay: calc(var(--i) * (3s / 50));
 }
 
-@keyframes java {
+.js{
+    position: absolute;
+    width: 200px;
+    background-color: red;
+}
+
+.js > h2{
+    position: relative;
+    top: -150px;
+    font-size: 3em;
+    color: blue;
+    text-align: center;
+}
+
+.js > h3{
+    position: relative;
+    top: -20px;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+@keyframes js {
     0% {
         background-color: var(--standardcolor);
     }
