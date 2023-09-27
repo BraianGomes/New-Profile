@@ -419,8 +419,30 @@ span{
     min-height: 100vh;
 }
 
-.loginBox{
+#containerRotate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    width: 256px;
+    height: 256px;
+}
+
+#containerRotate > span{
+    position: absolute;
+    left: 0;
+    width: 32px;
+    height: 6px;
+    background-color: yellow;
+    border-radius: 8px;
+    transform-origin: 128px;
+    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    animation: html 3s linear infinite;
+    animation-delay: calc(var(--i) * (3s / 50));
+}
+
+.loginBox{
+    position: absolute;
     width: 400px;
     background-color: red;
 }
@@ -434,19 +456,7 @@ span{
 
 
 
-.skills > h2{
-    text-align: center;
-    margin: 2em 0em;
-}
 
-#skill{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    justify-items: center;
-    align-items: center;
-    gap: 10em;
-    margin-bottom: 8em;
-}
 
 #html,
 #css,
