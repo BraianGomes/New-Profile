@@ -328,6 +328,7 @@ span{
 }
 
 #selfImg > img{
+    margin-top: 5em;
     width: 150px;
     height: 200px;
     border-radius: 10%;
@@ -354,7 +355,7 @@ span{
 #aboutContainer > h2{
     text-align: start;
     line-height: 1.5em;
-    margin-bottom: 1em;
+    margin: 2em 0px 1em 0px;
 }
 
 #aboutContainer > h3{
@@ -408,10 +409,6 @@ span{
     margin: 1em 0px 1em;
 }
 
-
-
-
-
 .skills{
     background-color: var(--bgcolor2);
     display: flex;
@@ -420,6 +417,10 @@ span{
     align-items: center;
     min-height: 100vh;
     gap: 35em;
+}
+
+.skills > h2{
+    margin-top: 2em;
 }
 
 #containerHtml,
@@ -441,7 +442,7 @@ span{
 
 .html > h2{
     position: relative;
-    top: -150px;
+    top: -170px;
     font-size: 3em;
     color:var(--standardcolor);
     text-align: center;
@@ -456,7 +457,7 @@ span{
 }
 
 #containerHtml{
-    margin-top: 25em;
+    margin-top: 2em 0px;
 }
 
 #containerHtml > span{
@@ -467,9 +468,9 @@ span{
     background-color: yellow;
     border-radius: 4px;
     transform-origin: 64px;
-    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    transform: scale(2.2) rotate(calc(var(--i) * (330deg / 45)));
     animation: html 3s linear infinite;
-    animation-delay: calc(var(--i) * (3s / 50));
+    animation-delay: calc(var(--i) * (3s / 45));
 }
 
 @keyframes html {
@@ -490,7 +491,7 @@ span{
 
 .css > h2{
     position: relative;
-    top: -150px;
+    top: -170px;
     font-size: 3em;
     color: blue;
     text-align: center;
@@ -512,9 +513,9 @@ span{
     background-color: yellow;
     border-radius: 4px;
     transform-origin: 64px;
-    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    transform: scale(2.2) rotate(calc(var(--i) * (300deg / 40)));
     animation: css 3s linear infinite;
-    animation-delay: calc(var(--i) * (3s / 50));
+    animation-delay: calc(var(--i) * (3s / 40));
 }
 
 @keyframes css {
@@ -535,9 +536,9 @@ span{
     background-color: yellow;
     border-radius: 4px;
     transform-origin: 64px;
-    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    transform: scale(2.2) rotate(calc(var(--i) * (240deg / 35)));
     animation: js 3s linear infinite;
-    animation-delay: calc(var(--i) * (3s / 50));
+    animation-delay: calc(var(--i) * (3s / 35));
 }
 
 .js{
@@ -548,7 +549,7 @@ span{
 
 .js > h2{
     position: relative;
-    top: -150px;
+    top: -170px;
     font-size: 3em;
     color: blue;
     text-align: center;
