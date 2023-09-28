@@ -411,16 +411,21 @@ span{
 
 .skills{
     background-color: var(--bgcolor2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    gap: 35em;
+    text-align: center;
 }
 
 .skills > h2{
     margin-top: 2em;
+}
+
+#skillBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35em;
+    margin-top: 20em;
+    padding-bottom: 15em;
 }
 
 #containerHtml,
@@ -437,7 +442,6 @@ span{
 .html{
     position: absolute;
     width: 200px;
-    background-color: red;
 }
 
 .html > h2{
@@ -452,7 +456,7 @@ span{
     position: relative;
     top: -20px;
     font-size: 3em;
-    color: white;
+    color: var(--textcolor);
     text-align: center;
 }
 
@@ -486,14 +490,13 @@ span{
 .css{
     position: absolute;
     width: 200px;
-    background-color: red;
 }
 
 .css > h2{
     position: relative;
     top: -170px;
     font-size: 3em;
-    color: blue;
+    color: var(--standardcolor);
     text-align: center;
 }
 
@@ -501,7 +504,7 @@ span{
     position: relative;
     top: -20px;
     font-size: 3em;
-    color: white;
+    color: var(--textcolor);
     text-align: center;
 }
 
@@ -544,14 +547,13 @@ span{
 .js{
     position: absolute;
     width: 200px;
-    background-color: red;
 }
 
 .js > h2{
     position: relative;
     top: -170px;
     font-size: 3em;
-    color: blue;
+    color: var(--standardcolor);
     text-align: center;
 }
 
@@ -559,7 +561,7 @@ span{
     position: relative;
     top: -20px;
     font-size: 3em;
-    color: white;
+    color: var(--textcolor);
     text-align: center;
 }
 
