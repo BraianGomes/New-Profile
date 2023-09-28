@@ -143,12 +143,43 @@
     padding: 0px 1.2em;
   }
 
+  
+  
   #skillBox{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    gap: 20em;
- }
+    gap: 30em;
+    margin-top: 20em;
+    padding-bottom: 15em;
+  }
+  
+  #containerHtml,
+  #containerCss,
+  #containerJs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 128px;
+    height: 128px;
+  }
+  
+    #containerCss > span{
+      position: absolute;
+      left: 0;
+      width: 16px;
+      height: 3px;
+      background-color: var(--textcolor);
+      border-radius: 4px;
+      transform-origin: 64px;
+      transform: scale(2.2) rotate(calc(var(--i) * (300deg / 40)));
+      animation: css 3s linear infinite;
+      animation-delay: calc(var(--i) * (3s / 40));
+  }
+  
+
 }
  
 @media screen and (min-width: 1200px) {
