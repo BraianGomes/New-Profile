@@ -148,10 +148,9 @@
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 20em;
-}
+ }
 }
  
-
 @media screen and (min-width: 1200px) {
   html {
     font-size: 90%;

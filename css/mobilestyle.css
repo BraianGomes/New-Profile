@@ -93,7 +93,13 @@ body.dark header{
 body.dark #number > p,
 body.dark .modes > h3,
 body.dark #homeContainer > h3,
-body.dark #homeContainer > p{
+body.dark #homeContainer > p,
+body.dark .html > h2,
+body.dark .css > h2,
+body.dark .js > h2,
+body.dark .html > h3,
+body.dark .css > h3,
+body.dark .js > h3{
     color: black;
 }
 
@@ -368,6 +374,37 @@ span{
     margin: 2em 0px 2.5em;
 }
 
+#botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+}
+
+.btn{
+    text-align: center;
+    background-color: var(--standardcolor);
+    width: 150px;
+    height: 40px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 11px;
+    border-radius: 25px;
+    color: var(--bgcolor);
+    transition: all .6s ease-in-out 0s;
+    box-shadow: 0 0 20px var(--bgcolor);
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: var(--textcolor);
+    transform: scale(1.5) rotate(360deg);
+    box-shadow: 0 0 60px var(--standardcolor);
+    cursor: pointer;
+    border: 2px solid var(--standardcolor);
+}
+
 #services > h2{
     margin: 2em 0em;
 }
@@ -469,7 +506,7 @@ span{
     left: 0;
     width: 16px;
     height: 3px;
-    background-color: yellow;
+    background-color: var(--textcolor);
     border-radius: 4px;
     transform-origin: 64px;
     transform: scale(2.2) rotate(calc(var(--i) * (330deg / 45)));
@@ -483,7 +520,7 @@ span{
     }
 
     100% {
-        background-color: var(--bgcolor);
+        background-color: var(--textcolor);
     }
 }
 
@@ -513,7 +550,7 @@ span{
     left: 0;
     width: 16px;
     height: 3px;
-    background-color: yellow;
+    background-color: var(--textcolor);
     border-radius: 4px;
     transform-origin: 64px;
     transform: scale(2.2) rotate(calc(var(--i) * (300deg / 40)));
@@ -526,8 +563,8 @@ span{
         background-color: var(--standardcolor);
     }
 
-    50% {
-        background-color: var(--bgcolor);
+    100% {
+        background-color: var(--textcolor);
     }
 }
 
@@ -536,7 +573,7 @@ span{
     left: 0;
     width: 16px;
     height: 3px;
-    background-color: yellow;
+    background-color: var(--textcolor);
     border-radius: 4px;
     transform-origin: 64px;
     transform: scale(2.2) rotate(calc(var(--i) * (240deg / 35)));
@@ -570,8 +607,8 @@ span{
         background-color: var(--standardcolor);
     }
 
-    50% {
-        background-color: var(--bgcolor);
+    100% {
+        background-color: var(--textcolor);
     }
 }
 
