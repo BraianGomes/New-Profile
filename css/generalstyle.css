@@ -43,11 +43,11 @@
     }
   }
 
-  .cabeca{
+  .cabeca {
     display: flex;
     flex-direction: row;
     padding: 2em 10%;
-}
+  }
 
   .modes {
     left: 90%;
@@ -141,46 +141,8 @@
     font-size: 1.5em;
     padding: 0px 1.2em;
   }
-
-  
-  
-  #skillBox{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 30em;
-    margin-top: 20em;
-    padding-bottom: 15em;
-  }
-  
-  #containerHtml,
-  #containerCss,
-  #containerJs{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 128px;
-    height: 128px;
-  }
-  
-    #containerCss > span{
-      position: absolute;
-      left: 0;
-      width: 16px;
-      height: 3px;
-      background-color: var(--textcolor);
-      border-radius: 4px;
-      transform-origin: 64px;
-      transform: scale(2.2) rotate(calc(var(--i) * (300deg / 40)));
-      animation: css 3s linear infinite;
-      animation-delay: calc(var(--i) * (3s / 40));
-  }
-  
-
 }
- 
+
 @media screen and (min-width: 1200px) {
   html {
     font-size: 90%;
@@ -188,21 +150,60 @@
 
   header,
   menu,
-  section{
+  section {
     width: 998px;
   }
 
-  .cabeca{
+  .cabeca {
     height: 130px;
   }
 
-  #block > a{
+  #block > a {
     font-size: 1.7em;
     padding: 0px 1.5em;
   }
 
+  #skillBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12em;
+    margin-top: 20em;
+    padding-bottom: 15em;
+  }
+
+  #containerHtml,
+  #containerCss,
+  #containerJs {
+    width: 96px;
+    height: 96px;
+  }
+
+  #containerHtml > span,
+  #containerCss > span,
+  #containerJs > span {
+    position: absolute;
+    left: 0;
+    width: 12px;
+    height: 2.5px;
+    background-color: var(--textcolor);
+    border-radius: 4px;
+    transform-origin: 48px;
+  }
+
+  .html > h2,
+  .css > h2,
+  .js > h2{
+    top: -150px;
+    left: -5px;
+    font-size: 2.2em;
+  }
+
+  .html > h3,
+  .css > h3,
+  .js > h3{
+    top: -25px;
+    font-size: 2.5em;
+  }
 }
-
-
-
-
