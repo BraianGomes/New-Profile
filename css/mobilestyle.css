@@ -340,7 +340,7 @@ span{
         transform: translateY(0);
     }
     50% {
-        transform: translateX(-15px);
+        transform: translateY(-25px);
     }
     100% {
         transform: translateY(0);
@@ -365,29 +365,16 @@ span{
 
 #aboutContainer > p{
     font-size: 1.5em;
-    margin: 2em 0px 2.5em;
-}
-
-.skills > h2{
-    margin: 2em 0em;
-}
-
-.skillsContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bgcolor);
-    border-radius: 25px;
+    margin: 2em 0px;
 }
 
 #botao{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width: 200px;
     height: 50px;
-    margin: 4em 0px 3em 1em;
+    margin: 4em 0px;
 }
 
 .btn{
