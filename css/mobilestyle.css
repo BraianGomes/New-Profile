@@ -126,17 +126,17 @@ body.dark .box > p{
     animation: coverImage 3s infinite;
 }
 
-#burguer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 @keyframes coverImage {
     100% {
         transform: translateY(0);
         box-shadow: 0 0 20px var(--standardcolor);    
     }
+}
+
+#burguer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #navbar{
