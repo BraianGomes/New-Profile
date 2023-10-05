@@ -156,7 +156,7 @@ body.dark .box > p{
     height: 110px;
     padding: 8px 3%;
     background-color: var(--bgcolor);
-    opacity: .8;
+    opacity: .92;
 }
 
 #block > a{
