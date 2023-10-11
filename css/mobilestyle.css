@@ -481,9 +481,14 @@ span{
     width: 200px;
 }
 
+.html > img{
+    width: 90px;
+    height: 70px;
+}
+
 .html > h2{
     position: relative;
-    top: -170px;
+    top: -200px;
     font-size: 3em;
     color:var(--standardcolor);
     text-align: center;
@@ -491,7 +496,7 @@ span{
 
 .html > h3{
     position: relative;
-    top: -20px;
+    top: -30px;
     font-size: 3em;
     color: var(--textcolor);
     text-align: center;
@@ -529,9 +534,14 @@ span{
     width: 200px;
 }
 
+.css > img{
+    width: 80px;
+    height: 70px;
+}
+
 .css > h2{
     position: relative;
-    top: -170px;
+    top: -200px;
     font-size: 3em;
     color: var(--standardcolor);
     text-align: center;
@@ -539,7 +549,7 @@ span{
 
 .css > h3{
     position: relative;
-    top: -20px;
+    top: -30px;
     font-size: 3em;
     color: var(--textcolor);
     text-align: center;
@@ -586,9 +596,15 @@ span{
     width: 200px;
 }
 
+.js > img{
+    width: 70px;
+    height: 60px;
+    border-radius: 10px;
+}
+
 .js > h2{
     position: relative;
-    top: -170px;
+    top: -200px;
     font-size: 3em;
     color: var(--standardcolor);
     text-align: center;
@@ -596,7 +612,7 @@ span{
 
 .js > h3{
     position: relative;
-    top: -20px;
+    top: -30px;
     font-size: 3em;
     color: var(--textcolor);
     text-align: center;

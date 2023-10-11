@@ -117,6 +117,12 @@
     padding-bottom: 4em;
   }
 
+  .html > h3,
+  .css > h3,
+  .js > h3 {
+    font-size: 2.5em;
+  }
+
   #footer {
     justify-content: center;
     gap: 3em;
@@ -192,18 +198,50 @@
     transform-origin: 48px;
   }
 
+  .html > img,
+  .css > img,
+  .js > img{
+    position: relative;
+  }
+
+  .html > img{
+    top: 10px;
+  }
+
+  .css > img{
+    top: 10px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .js > img{
+    top: 15px;
+    width: 65px;
+    height: 60px;
+  }
+
   .html > h2,
   .css > h2,
-  .js > h2{
-    top: -150px;
-    left: -5px;
+  .js > h2 {
     font-size: 2.2em;
+    left: -5px;
+  }
+
+  .css > h2{
+    top: -205px;
   }
 
   .html > h3,
   .css > h3,
   .js > h3{
-    top: -25px;
-    font-size: 2.5em;
+    font-size: 1.7em;
+  }
+
+  .css > h3{
+    top: -30px;
+  }
+
+  .js > h3{
+    top: -20px;
   }
 }
