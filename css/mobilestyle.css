@@ -93,7 +93,10 @@ body.dark header{
 body.dark #number > p,
 body.dark .modes > h3,
 body.dark #homeContainer > h3,
-body.dark #homeContainer > p{
+body.dark #homeContainer > p,
+body.dark .html > h3,
+body.dark .css > h3,
+body.dark .js > h3{
     color: black;
 }
 
