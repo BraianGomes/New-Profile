@@ -109,6 +109,17 @@
     border-radius: 20px;
   }
 
+  #number {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+
+  #number > p {
+    width: 250px;
+  }
+
   #services {
     padding-bottom: 4em;
   }
@@ -147,6 +158,10 @@
     font-size: 1.5em;
     padding: 0px 1.2em;
   }
+
+  #number > p{
+    width: 325px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -167,6 +182,10 @@
   #block > a {
     font-size: 1.7em;
     padding: 0px 1.5em;
+  }
+
+  #number > p {
+    width: 400px;
   }
 
   #skillBox {
@@ -200,21 +219,21 @@
 
   .html > img,
   .css > img,
-  .js > img{
+  .js > img {
     position: relative;
   }
 
-  .html > img{
+  .html > img {
     top: 10px;
   }
 
-  .css > img{
+  .css > img {
     top: 10px;
     width: 80px;
     height: 80px;
   }
 
-  .js > img{
+  .js > img {
     top: 15px;
     width: 65px;
     height: 60px;
@@ -227,21 +246,21 @@
     left: -5px;
   }
 
-  .css > h2{
+  .css > h2 {
     top: -205px;
   }
 
   .html > h3,
   .css > h3,
-  .js > h3{
+  .js > h3 {
     font-size: 1.7em;
   }
 
-  .css > h3{
+  .css > h3 {
     top: -30px;
   }
 
-  .js > h3{
+  .js > h3 {
     top: -20px;
   }
 }

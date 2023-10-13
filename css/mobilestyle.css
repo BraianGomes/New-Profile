@@ -84,8 +84,8 @@ section{
     left: 17px;
 }
 
-body.dark section,
-body.dark header{
+body.dark header,
+body.dark section{
     background-color: white;
     color: black;
 }
